@@ -1,0 +1,112 @@
+/* سکشن اصلی خوش‌آمدگویی - Main welcome screen section */
+.welcome-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* انیمیشن خروج - Exit animation */
+.welcome-screen.disappearing {
+  top: -100%;
+  transition: top 1s ease-in-out;
+}
+
+/* پس‌زمینه متحرک ستاره‌ای - Animated star background */
+.welcome-screen::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: url('../../assets/images/zz.jfif') no-repeat center center;
+  background-size: cover;
+  animation: zoomInOut 20s linear infinite;
+  opacity: 0.75;
+  z-index: -1;
+}
+
+/* جعبه پیام خوش‌آمدگویی - Welcome message box */
+.welcome-message {
+  font-family: 'Vazirmatn', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 90px;
+  border: 2px solid rgba(255, 225, 0, 0.62);
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  background-color: rgba(157, 113, 3, 0.65);
+  color: rgba(12, 9, 9, 0.84);
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+/* تیتر خوش‌آمدگویی - Main greeting */
+.greeting {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* متن معرفی محصول - Introduction text */
+.introduction {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+}
+
+/* واکنش‌گرایی موبایل - Responsive for mobile */
+@media (min-width: 40px) and (max-width: 738px) {
+  .welcome-message {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  .greeting {
+    font-size: 2rem;
+  }
+
+  .introduction {
+    font-size: 1.25rem;
+  }
+}
+
+/* انیمیشن محو شدن از پایین - Fade in from bottom */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* انیمیشن زوم پس‌زمینه - Background zoom animation */
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
