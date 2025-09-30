@@ -111,7 +111,7 @@ h2 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: #6818c3;
+  background-color: rgba(226, 198, 86, 0.84);
   color: hsl(190, 100%, 65%);
   cursor: pointer;
   transform: translate(50%, 100%);
@@ -276,12 +276,12 @@ h2 {
 }
 
 /* سکشن تکراری موبایل کوچک - Duplicate: small mobile */
-@media (min-width: 350px) and (max-width: 738px) {
+@media (min-width: 320px) and (max-width: 399px) {
   .asl {
-    font-size: large;
+    font-size: medium;
     align-items: center;
     justify-content: center;
-    transform: translate(135%, -290%);
+    transform: translate(149%, -310%);
     white-space: nowrap;
   }
     .left-box {

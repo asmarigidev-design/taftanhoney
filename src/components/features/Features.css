@@ -132,3 +132,9 @@
     margin-top: 140vh;
   }
 }
+@media (min-width: 320px) and (max-width: 399px) {
+ .features-container {
+    margin-top: 150vh;
+  }
+
+}
