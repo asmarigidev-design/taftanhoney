@@ -229,7 +229,7 @@ h2 {
     transform: translate(20%, 80%);
   }
 }/* سکشن ریسپانسیو موبایل کوچک - Responsive: small mobile */
-@media (min-width: 40px) and (max-width: 738px) {
+@media (min-width: 400px) and (max-width: 738px) {
   .asl {
     font-size: x-large;
     align-items: center;
@@ -276,14 +276,19 @@ h2 {
 }
 
 /* سکشن تکراری موبایل کوچک - Duplicate: small mobile */
-@media (min-width: 40px) and (max-width: 738px) {
+@media (min-width: 350px) and (max-width: 738px) {
   .asl {
-    font-size: x-large;
+    font-size: large;
     align-items: center;
     justify-content: center;
-    transform: translate(110%, -200%);
+    transform: translate(135%, -290%);
     white-space: nowrap;
   }
+    .left-box {
+    margin-top: 100vh;
+    width: 100%;
+  }
+
 
   .buttonn {
     display: none;
@@ -343,6 +348,7 @@ h2 {
     z-index: 999;
   }
 }
+
 
 /* سکشن ریسپانسیو موبایل متوسط - Responsive: medium mobile */
 @media (min-width: 481px) and (max-width: 868px) {

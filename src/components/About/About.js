@@ -10,7 +10,7 @@ const About = () => {
 
   return (
     <>
-      <div className="left-box" id="about"> {/* جعبه سمت راست با تصویر پس‌زمینه // Right box with background image */}
+      <div className="left-box" id="about" data-aos="flip-left"> {/* جعبه سمت راست با تصویر پس‌زمینه // Right box with background image */}
         <div className="data"> {/* اطلاعات اصلی // Main content */}
           <h1>عسل طبیعی</h1>
           <h1>خواص وافری که باید بدانید</h1>
@@ -23,7 +23,7 @@ const About = () => {
 
         <div className="benefits"> {/* بخش فواید عسل // Honey benefits section */}
           <h2>فواید عسل</h2>
-          <div className="tree"> {/* لیست فواید // Benefits list */}
+          <div className="tree" data-aos="fade-up-left"> {/* لیست فواید // Benefits list */}
             {[
               'ضد التهابی',
               'آنتی‌اکسیدان',
@@ -43,7 +43,7 @@ const About = () => {
         </div>
 
         <div className="footer-right"> {/* آیکون‌های شبکه اجتماعی // Social media icons */}
-          <div className="social-icons">
+          <div className="social-icons"  data-aos="fade-down">
             <a
               href="instagram"
               onMouseEnter={() => handleMouseEnter('taftanjkk-123')}
