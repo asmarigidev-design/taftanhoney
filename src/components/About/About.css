@@ -231,7 +231,7 @@ h2 {
 }/* سکشن ریسپانسیو موبایل کوچک - Responsive: small mobile */
 @media (min-width: 400px) and (max-width: 738px) {
   .asl {
-    font-size: x-large;
+    font-size: large;
     align-items: center;
     justify-content: center;
     transform: translate(110%, -200%);

@@ -82,7 +82,7 @@ const About = () => {
       </div>
 
       <div className="asl"> {/* بخش پایین با دکمه‌ها // Bottom section with buttons */}
-        <h1>Taftan</h1>
+        <h1>Taftan.Ha</h1>
         <div>Natural honey</div>
         <a href="#features"><button className="buttonn">آموزش ها</button></a>
         <a href="#about"><button className="buttonnr">خریدعسل</button></a>
