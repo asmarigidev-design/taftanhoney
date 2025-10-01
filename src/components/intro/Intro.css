@@ -1,14 +1,19 @@
-/* سکشن اصلی خوش‌آمدگویی - Main welcome screen section */
-
+/* تنظیمات پایه برای همه عناصر - Base settings for all elements */
 * {
   box-sizing: border-box;
 }
+
+/* تنظیمات اولیه برای صفحه و بدنه - Initial settings for html and body */
 html, body {
+  margin: 0;
+  padding: 0;
   max-width: 100%;
+  height: 100%;
+  font-family: 'Vazirmatn', sans-serif;
 }
 
+/* سکشن خوش‌آمدگویی تمام‌صفحه - Fullscreen welcome section */
 .welcome-screen {
-  overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,17 +24,17 @@ html, body {
   align-items: center;
   justify-content: center;
   z-index: 1100;
-  overflow-x: hidden;
+  overflow: hidden;
   animation: fadeIn 1.5s ease-in-out;
 }
 
-/* انیمیشن خروج - Exit animation */
+/* انیمیشن خروج از بالا - Exit animation upward */
 .welcome-screen.disappearing {
   top: -100%;
   transition: top 1s ease-in-out;
 }
 
-/* پس‌زمینه متحرک ستاره‌ای - Animated star background */
+/* پس‌زمینه متحرک با تصویر - Animated background with image */
 .welcome-screen::before {
   content: '';
   position: absolute;
@@ -46,75 +51,40 @@ html, body {
 
 /* جعبه پیام خوش‌آمدگویی - Welcome message box */
 .welcome-message {
-  font-family: 'Vazirmatn', sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 2vw, 2rem);
   text-align: center;
-  padding: 90px;
+  padding: 5vw;
   border: 2px solid rgba(255, 225, 0, 0.62);
   border-radius: 25px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   background-color: rgba(157, 113, 3, 0.65);
-  color: rgba(12, 9, 9, 0.84);
+  color: #3b2511ff;
   line-height: 1.6;
   letter-spacing: 0.05em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   animation: fadeInUp 1.2s ease-out;
+  max-width: 90%;
 }
 
-/* تیتر خوش‌آمدگویی - Main greeting */
+/* تیتر اصلی خوش‌آمدگویی - Main welcome heading */
 .greeting {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: bold;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  color: #3b2511ff;
 }
 
-/* متن معرفی محصول - Introduction text */
+/* متن معرفی محصول یا سایت - Product or site introduction text */
 .introduction {
-  font-size: 1.75rem;
+  font-size: clamp(1.2rem, 3vw, 1.75rem);
   font-weight: bold;
-  margin-bottom: 20px;
-  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  color: #3b2511ff;
 }
 
-@media (min-width: 320px) and (max-width:380px) {
-  .welcome-message {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 30px 5px;
-    box-sizing: border-box;
-    margin-right:20%;
-  }
-
-  .greeting {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-  }
-
-  .introduction {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-  }
-
-  .welcome-screen {
-    flex-direction: column;
-    padding: 20px;
-  }
-}
-
-@media (min-width: 381px) and (max-width:600px) {
-  .welcome-message {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 30px 5px;
-    box-sizing: border-box;
-  }
-}
-/* انیمیشن محو شدن از پایین - Fade in from bottom */
+/* انیمیشن ظاهر شدن از پایین - Fade-in from bottom animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -136,5 +106,13 @@ html, body {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* تنظیمات ریسپانسیو برای موبایل - Responsive settings for mobile */
+@media (max-width: 600px) {
+  .welcome-message {
+    padding: 6vw;
+    border-radius: 15px;
   }
 }

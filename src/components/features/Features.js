@@ -51,7 +51,11 @@ const Features = () => {
     // بخش نمایش ویدیوها - Video display section
     <>
     <div className="features-container" id="features">
-      <div className="header"> <p data-aos="fade-up">کافیه گوشه ی ویدیو کلیک کنید تااز خواص عسل بهره مند بشید </p>  </div>
+<div className="header">
+  <p data-aos="fade-up">
+    برای آشنایی با خواص بی‌نظیر عسل، کافیست  گوشه‌ی ویدیو کلیک کنید.
+  </p>
+</div>
 
       {videos.map((video, index) => (
         <div className="video-card" key={index}>
