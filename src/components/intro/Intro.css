@@ -79,22 +79,41 @@ html, body {
   color: rgb(0, 0, 0);
 }
 
-/* واکنش‌گرایی موبایل - Responsive for mobile */
-@media (min-width: 40px) and (max-width: 738px) {
+@media (min-width: 320px) and (max-width:380px) {
   .welcome-message {
-    padding: 20px;
-    font-size: 1.5rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 30px 5px;
+    box-sizing: border-box;
+    margin-right:20%;
   }
 
   .greeting {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
   }
 
   .introduction {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+  }
+
+  .welcome-screen {
+    flex-direction: column;
+    padding: 20px;
   }
 }
 
+@media (min-width: 381px) and (max-width:600px) {
+  .welcome-message {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 30px 5px;
+    box-sizing: border-box;
+  }
+}
 /* انیمیشن محو شدن از پایین - Fade in from bottom */
 @keyframes fadeInUp {
   from {

@@ -279,12 +279,11 @@ h2 {
 /* سکشن تکراری موبایل کوچک - Duplicate: small mobile */
 @media (min-width: 320px) and (max-width: 399px) {
   .asl {
-    font-size: medium;
     align-items: center;
     justify-content: center;
-    transform: translate(159%, -325%);
+    transform: translate(162%, -338%);
     white-space: nowrap;
-    font-size: 0.99rem;
+    font-size: 0.90rem;
 
   }
     .left-box {
@@ -302,9 +301,9 @@ h2 {
 
   .buttonnr {
     display: block;
-    font-size: x-large;
+    font-size: large;
     margin-top: 40px;
-    transform: translate(20%, 50%);
+    transform: translate(50%, 50%);
     border: 1px solid rgb(98, 62, 18);
     border-radius: 5px;
     color: #333;
@@ -346,7 +345,7 @@ h2 {
     font-size: x-large;
     align-items: center;
     justify-content: center;
-    transform: translate(120%, -200%);
+    transform: translate(108%, -240%);
     white-space: nowrap;
     z-index: 999;
   }
