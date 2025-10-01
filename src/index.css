@@ -19,3 +19,8 @@ body {
 html, body {
   max-width: 100%;
 }
+ .app{
+   box-sizing: border-box;
+   overflow-x: hidden;
+
+  }

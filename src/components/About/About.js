@@ -38,8 +38,6 @@ const About = () => {
               <h3 key={index} className="skill-item">{item}</h3> // آیتم فواید // Benefit item
             ))}
           </div>
-          <div className="arr"> {/* آیکون فلش // Arrow icon */}
-          </div>
         </div>
 
         <div className="footer-right"> {/* آیکون‌های شبکه اجتماعی // Social media icons */}
