@@ -281,8 +281,10 @@ h2 {
     font-size: medium;
     align-items: center;
     justify-content: center;
-    transform: translate(149%, -310%);
+    transform: translate(159%, -325%);
     white-space: nowrap;
+    font-size: 0.99rem;
+
   }
     .left-box {
     margin-top: 100vh;
@@ -343,7 +345,7 @@ h2 {
     font-size: x-large;
     align-items: center;
     justify-content: center;
-    transform: translate(110%, -200%);
+    transform: translate(120%, -200%);
     white-space: nowrap;
     z-index: 999;
   }

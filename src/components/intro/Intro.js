@@ -33,11 +33,11 @@ const Intro = () => {
     <div className="welcome-screen" ref={welcomeRef}>
       <div className="welcome-message">
         {/* تیتر خوش‌آمدگویی - Greeting title */}
-        <div className="greeting">
+        <div className="greeting" data-aos="fade-left">
           اگر به دنبال عسل طبیعی و خالص هستید، همراه ما باشید
         </div>
         {/* متن معرفی محصول - Product introduction text */}
-        <div className="introduction">
+        <div className="introduction" data-aos="fade-right">
           عسل تفتان، باکیفیت‌ترین عسل طبیعی، سرشار از آنتی‌اکسیدان‌ها و خواص ضد التهابی است
           برای خرید عسل طبیعی تفتان و بهره‌مندی از خواص فوق‌العاده آن، همین حالا اقدام کنید.
         </div>
