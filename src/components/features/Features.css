@@ -1,0 +1,170 @@
+/* شروع سکشن کانتینر ویژگی‌ها - Start of Features Container Section */
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  font-family: 'Vazirmatn', sans-serif;
+  margin-top: 40vh;
+}
+
+.header {
+  grid-column: 1 / -1; /* باعث می‌شه هدر کل عرض گرید رو بگیره */
+  background: linear-gradient(to right, #f5e6b1, #e2c656);
+  padding: 5px 10px;
+  text-align: center;
+  border-top: 5px solid #a87c00;
+  border-bottom: 5px solid #a87c00;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Vazirmatn', sans-serif;
+  border-radius: 16px;
+  color: #453101ff;
+  font-size: clamp(1.2rem, 2vw, 2rem); /* ریسپانسیو! */
+
+}
+
+/* شروع سکشن کارت ویدیو - Start of Video Card Section */
+.video-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  border-radius: 5px solid #a87c00;
+
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
+/* شروع سکشن ویدیو داخلی - Start of Inner Video Section */
+.video-element {
+  width: 97%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  border: 5px solid  #f7e5a5c1;
+}
+
+
+/* شروع سکشن لایه اطلاعاتی روی ویدیو - Start of Video Overlay Section */
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 97%;
+  padding: 12px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;     /* وسط‌چینی عمودی */
+  align-items: center;         /* وسط‌چینی افقی */
+  pointer-events: none;
+  border-radius: 16px;
+  border: 5px solid  #deba39c1;
+  display: flex;
+  justify-content: center; /* افقی */
+  align-items: center;     /* عمودی */
+  text-align: center;
+  
+
+}
+
+.video-card:hover .video-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-card:hover .video-overlay {
+  opacity: 1;
+}
+
+.video-overlay h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #deba39c1;
+}
+
+.video-overlay p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 4px 0 0;
+  color: #f7e5a5c1;
+    font-size: clamp(1.2rem, 0.75vw, 1rem); /* ریسپانسیو! */
+
+}
+
+/* شروع سکشن ریسپانسیو موبایل کوچک تا متوسط - Start of Responsive Small to Medium Mobile Section */
+@media (min-width: 400px) and (max-width: 778px) {
+  .features-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-top: 100vh;
+  }
+
+  .video-overlay h3 {
+    font-size: 16px;
+  }
+
+  .video-overlay p {
+    font-size: 13px;
+  }
+}
+
+/* شروع سکشن ریسپانسیو موبایل بزرگ تا تبلت - Start of Responsive Large Mobile to Tablet Section */
+@media (min-width: 779px) and (max-width: 839px) {
+  .features-container {
+    margin-top: 120vh;
+  }
+}
+
+/* شروع سکشن ریسپانسیو تبلت تا دسکتاپ کوچک - Start of Responsive Tablet to Small Desktop Section */
+@media (min-width: 868px) and (max-width: 1024px) {
+  .features-container {
+    margin-top: 60vh;
+  }
+}
+
+/* شروع سکشن ریسپانسیو دسکتاپ متوسط - Start of Responsive Medium Desktop Section */
+@media (min-width: 1401px) and (max-width: 1502px) {
+  .features-container {
+    margin-top: 30vh;
+  }
+}
+
+/* شروع سکشن ریسپانسیو دسکتاپ بزرگ - Start of Responsive Large Desktop Section */
+@media (min-width: 1503px) and (max-width: 1700px) {
+  .features-container {
+    margin-top: 10vh;
+  }
+}
+
+/* شروع سکشن ریسپانسیو تبلت متوسط - Start of Responsive Mid Tablet Section */
+@media (min-width: 739px) and (max-width: 868px) {
+  .features-container {
+    margin-top: 160vh;
+  }
+}
+
+/* شروع سکشن ریسپانسیو ترکیبی موبایل تا تبلت - Start of Combined Mobile to Tablet Section */
+@media (min-width: 400px) and (max-width: 739px) {
+  .features-container {
+    margin-top: 140vh;
+  }
+}
+@media (min-width: 320px) and (max-width: 399px) {
+ .features-container {
+    margin-top: 150vh;
+  }
+
+}
